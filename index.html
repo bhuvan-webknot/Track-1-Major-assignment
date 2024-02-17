@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexAI</title>
+    <!-- Include Tailwind stylesheet -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Source CSS PATH -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- TAILWIND CONFIGS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="w-full h-full">
+    <!-- Navbar -->
+    <div id="navbar">
+      <nav class="flex w-full justify-between xl:justify-around align-middle">
+        <img style="width: 15%" src="./images/logo.svg" alt="" />
+        <div class="nav-items hidden xl:flex">
+          <a class="nav-item hover:cursor-pointer"
+            ><span>Company</span>
+            <ion-icon name="chevron-down-outline"></ion-icon
+          ></a>
+          <a class="nav-item hover:cursor-pointer"
+            ><span>Learn</span> <ion-icon name="chevron-down-outline"></ion-icon
+          ></a>
+          <a class="nav-item hover:cursor-pointer"><span>Pricing</span></a>
+          <a class="nav-item hover:cursor-pointer"><span>Login</span> </a>
+          <button class="py-2 px-3 rounded-lg">Get Started</button>
+        </div>
+        <div class="flex xl:hidden">
+          <ion-icon name="menu-outline" class="size-9 mt-3"></ion-icon>
+        </div>
+      </nav>
+    </div>
+
+    <!-- -------------Hero Section----------------->
+    <section
+      id="hero-section"
+      class="grid grid-cols-1 gap-3 xl:grid-cols-2 w-100"
+    >
+      <div class="hero-section-text text-left">
+        <p class="yoo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, assumenda!</p>
+        <button class="py-2 px-2 rounded-lg">Get Started</button>
+      </div>
+      <div class="hero-section-img text-center">
+        <img src="./images/hero-section-image.svg" alt="" />
+      </div>
+    </section>
+
+    <div
+      class="projects-completion-div w-100 grid grid-cols-1 md:grid-cols-3 gap-14"
+    >
+      <div class="text-center">
+        <h1>250+</h1>
+        <p>Trusted Partners</p>
+      </div>
+      <div class="text-center">
+        <h1>112+</h1>
+        <p>Successful Projects</p>
+      </div>
+      <div class="text-center">
+        <h1>250+</h1>
+        <p>Trusted Partners</p>
+      </div>
+    </div>
+    <!-- ----------------------------------------->
+
+    <!-- -------------How it works section----------------->
+    <section id="how-it-works-section">
+      <div class="how-it-works-section-text text-center">
+        <h1>How it works ?</h1>
+        <p>Follow these 3 easy steps</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+        <div class="steps-card">
+          <div class="steps-card-part-1">
+            <div class="steps-card-img-container">
+              <img src="./images/register-card.svg" alt="" />
+            </div>
+            <h2>1</h2>
+          </div>
+          <div class="steps-card-part-2">
+            <h2>Register</h2>
+            <p>
+              Sign up and Connect your Data Sources with one-click integrations.
+            </p>
+          </div>
+        </div>
+
+        <div class="steps-card">
+          <div class="steps-card-part-1">
+            <div class="steps-card-img-container">
+              <img src="./images/enquire-card.svg" alt="" />
+            </div>
+            <h2>2</h2>
+          </div>
+          <div class="steps-card-part-2">
+            <h2>Enquire</h2>
+            <p>Prompt NexAI with Business Queries</p>
+          </div>
+        </div>
+
+        <div class="steps-card">
+          <div class="steps-card-part-1">
+            <div class="steps-card-img-container">
+              <img src="./images/explore.svg" alt="" />
+            </div>
+            <h2>3</h2>
+          </div>
+          <div class="steps-card-part-2">
+            <h2>Explore</h2>
+            <p>Start Analyzing your Data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------->
+
+    <!---------------About NextAI----------------->
+    <section id="about-nexai">
+      <div class="text-center">
+        <h1>Why NexAI is Essential for Web Stores</h1>
+        <p>
+          NexAI employs advanced AI for personalized product suggestions,
+          ensuring a unique and engaging shopping experience that aligns with
+          individual preferences.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 text-center gap-3">
+        <div class="about-nexai-card">
+          <div class="card-icon">
+            <img src="./images/image_search.svg" alt="" />
+          </div>
+          <h1>Tailored Recommendations</h1>
+          <p>
+            NexAI predicts demand patterns, preventing overstock and
+            out-of-stock scenarios, optimizing inventory management for improved
+            operational efficiency.
+          </p>
+        </div>
+        <div class="about-nexai-card">
+          <div class="card-icon">
+            <img src="./images/image_search.svg" alt="" />
+          </div>
+          <h1>Smart Sales Insights</h1>
+          <p>
+            Utilize NexAI for intelligent customer trend analysis, enabling
+            strategic product placement and targeted marketing efforts to drive
+            sales.
+          </p>
+        </div>
+        <div class="about-nexai-card">
+          <div class="card-icon">
+            <img src="./images/image_search.svg" alt="" />
+          </div>
+          <h1>Instant Customer Support</h1>
+          <p>
+            With NexAI's integrated chatbot, provide 24/7 responsive assistance,
+            guiding users and answering queries for enhanced customer
+            satisfaction and loyalty.
+          </p>
+        </div>
+        <div class="about-nexai-card">
+          <div class="card-icon">
+            <img src="./images/image_search.svg" alt="" />
+          </div>
+          <h1>Efficient Inventory Control</h1>
+          <p>
+            NexAI employs advanced AI for personalized product suggestions,
+            ensuring a unique and engaging shopping experience that aligns with
+            individual preferences.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------>
+
+    <!---------------Billing Section----------------->
+    <section id="billing-section">
+      <div class="first-part text-center">
+        <h1 class="font-semibold text-3xl mb-5">Get Started Now</h1>
+        <p class="text-slate-900 mb-8">
+          Lörem ipsum tygydevis kvaside har cringe och änälogi i mjuta multina
+          såväl som sokrojugen yv eftersom bepos ber de libel. Bängen änack i
+          nyhöpäsa konsiv att aktig fast ov.
+        </p>
+        <div>
+          <button
+            class="m-0 py-2 px-4 border-2 border-slate-600 rounded-lg hover:bg-slate-200 transition"
+          >
+            Annual Billing
+          </button>
+          <button
+            style="background-color: #1f3e50"
+            class="m-0 py-2 px-4 border-2 text-white rounded-lg hover:bg-slate-300 transition"
+          >
+            Monthly Billing
+          </button>
+        </div>
+      </div>
+      <!-- ---------------------------------------->
+
+      <!-- THE PRICING CARDS SECTION  -->
+      <div class="pricing-cards mt-20 grid gap-10 grid-cols-1 lg:grid-cols-3">
+        <!-- Card-1 -->
+        <div
+          class="pricing-card flex flex-col px-9 py-7 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
+        >
+          <img class="size-4 mb-2" src="./images/circle.png" alt="" />
+          <h3 class="mb-4 text-2xl text-left font-semibold">Starter</h3>
+          <hr />
+          <br />
+          <div class="flex justify-center items-baseline my-4">
+            <span class="mr-2 text-4xl font-extrabold">$29</span>
+            <span class="text-gray-500">/mo.</span>
+          </div>
+          <p class="text-center text-gray-500">(billed monthly)</p>
+          <p class="font-light text-gray-500 text-left text-sm px-4 my-4">
+            <b class="font-bold">Lörem ipsum </b> tygydevis kvaside har cringe
+            och änälogi
+          </p>
+          <hr />
+
+          <ul role="list" class="my-8 space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem ipsum dolor sit.</span>
+            </li>
+            <li class="flex items-center space-x-3 ml-1">
+              <img src="./images/close.png" class="size-3" alt="" />
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+            <li class="flex items-center space-x-3 ml-1">
+              <img src="./images/close.png" class="size-3" alt="" />
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+            <li class="flex items-center space-x-3 ml-1">
+              <img src="./images/close.png" class="size-3" alt="" />
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+            <li class="flex items-center space-x-3 ml-1">
+              <img src="./images/close.png" class="size-3" alt="" />
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            style="background-color: #1f3e50"
+            class="text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >Start free trial</a
+          >
+        </div>
+
+        <!-- card - 2 -->
+        <div
+          class="pricing-card pricing-card-2 flex flex-col px-9 py-7 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border border-gray-600 text-white shadow"
+        >
+          <div class="flex">
+            <img class="size-4 mb-2 mr-2" src="./images/ellipse.png" alt="" />
+            <img class="size-4 mb-2" src="./images/ellipse.png" alt="" />
+          </div>
+          <h3 class="mb-4 text-2xl text-left font-semibold">Basic</h3>
+          <hr />
+          <br />
+          <div class="flex justify-center items-baseline my-4">
+            <span class="mr-2 text-4xl font-extrabold">$49</span>
+            <span class="text-gray-500">/mo.</span>
+          </div>
+          <p class="text-center text-gray-500">(billed monthly)</p>
+          <p class="font-light text-gray-300 text-left text-sm px-4 my-4">
+            <b class="font-bold">Lörem ipsum </b> tygydevis kvaside har cringe
+            och änälogi
+          </p>
+          <hr />
+
+          <ul role="list" class="my-8 space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem ipsum dolor sit.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem, ipsum dolor.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem, dfdafdffm dolor.</span>
+            </li>
+            <li class="flex items-center space-x-3 ml-1">
+              <img src="./images/close.png" class="size-3" alt="" />
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+            <li class="flex items-center space-x-3 ml-1">
+              <img src="./images/close.png" class="size-3" alt="" />
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            style="background-color: #fff"
+            class="text-gray-800 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-bold rounded-lg text-sm px-5 py-2.5 text-center"
+            >Start free trial</a
+          >
+        </div>
+
+        <!-- Card - 3 -->
+        <div
+          class="pricing-card flex flex-col px-9 py-7 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
+        >
+          <div class="flex">
+            <img class="size-4 mb-2 mr-2" src="./images/circle.png" alt="" />
+            <img class="size-4 mb-2 mr-2" src="./images/circle.png" alt="" />
+            <img class="size-4 mb-2" src="./images/circle.png" alt="" />
+          </div>
+          <h3 class="mb-4 text-2xl text-left font-semibold">Pro</h3>
+          <hr />
+          <br />
+          <div class="flex justify-center items-baseline my-4">
+            <span class="mr-2 text-4xl font-extrabold">$59</span>
+            <span class="text-gray-500">/mo.</span>
+          </div>
+          <p class="text-center text-gray-500">(billed monthly)</p>
+          <p class="font-light text-gray-500 text-left text-sm px-4 my-4">
+            <b class="font-bold">Lörem ipsum </b> tygydevis kvaside har cringe
+            och änälogi
+          </p>
+          <hr />
+
+          <ul role="list" class="my-8 space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem ipsum dolor sit.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem, ipsum dolor.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem, dfdafdffm dolor.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lörem ipsum tygydevis </span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>Lorem ipsum dolor sit.</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            style="background-color: #1f3e50"
+            class="text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >Start free trial</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Used the already-created cards from about-nexai section -->
+    <section id="about">
+      <div class="grid grid-cols-1 md:grid-cols-2 text-center gap-3">
+        <div class="about-card">
+          <div class="card-icon">
+            <img src="./images/image_search.svg" alt="" />
+          </div>
+          <h1>Tailored Recommendations</h1>
+          <p>
+            NexAI predicts demand patterns, preventing overstock and
+            out-of-stock scenarios, optimizing inventory management for improved
+            operational efficiency.
+          </p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">
+            <img src="./images/image_search.svg" alt="" />
+          </div>
+          <h1>Smart Sales Insights</h1>
+          <p>
+            Utilize NexAI for intelligent customer trend analysis, enabling
+            strategic product placement and targeted marketing efforts to drive
+            sales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section  -->
+    <section id="feedback">
+      <h1 class="text-3xl text-center mb-24">What our customers say ?</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-20">
+        <div
+          class="feedback-card flex flex-col text-center justify-center align-middle px-5 shadow-xl rounded-lg"
+        >
+          <img
+            class="feedback-customer-img size-20"
+            src="./images/client.png"
+            alt=""
+          />
+          <h1 class="text-lg font-semibold mb-2">Olivia</h1>
+          <div class="flex">
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+          </div>
+          <hr class="my-4" />
+          <p class="mb-10 text-gray-600 text-sm">
+            Lorem ipsum dolor sit amet consectetur. Consequat diam lacus lacus
+            facilisi sit
+          </p>
+        </div>
+        <div
+          class="feedback-card flex flex-col text-center justify-center align-middle px-5 shadow-xl rounded-lg"
+        >
+          <img
+            class="feedback-customer-img size-20"
+            src="./images/client.png"
+            alt=""
+          />
+          <h1 class="text-lg font-semibold mb-2">Olivia</h1>
+          <div class="flex">
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+          </div>
+          <hr class="my-4" />
+          <p class="mb-10 text-gray-600 text-sm">
+            Lorem ipsum dolor sit amet consectetur. Consequat diam lacus lacus
+            facilisi sit
+          </p>
+        </div>
+        <div
+          class="feedback-card flex flex-col text-center justify-center align-middle px-5 shadow-xl rounded-lg"
+        >
+          <img
+            class="feedback-customer-img size-20"
+            src="./images/client.png"
+            alt=""
+          />
+          <h1 class="text-lg font-semibold mb-2">Olivia</h1>
+          <div class="flex">
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+            <img class="size-7" src="./images/star.png" alt="" />
+          </div>
+          <hr class="my-4" />
+          <p class="mb-10 text-gray-600 text-sm">
+            Lorem ipsum dolor sit amet consectetur. Consequat diam lacus lacus
+            facilisi sit
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="last-section"
+      class="grid grid-cols-1 gap-3 xl:grid-cols-2 w-100"
+    >
+      <div class="last-section-text text-left">
+        <h2 class="text-2xl font-semibold text-slate-800">
+          Supercharge Your Success with NexAI:
+          <span class="text-gray-600 font-medium"
+            >Elevate Your Business Operations and Customer Experience. Try NexAI
+            Today for a Smarter Tomorrow !</span
+          >
+        </h2>
+        <button class="py-2 px-2 rounded-lg">Get Started</button>
+      </div>
+      <div class="last-section-img text-center">
+        <img src="./images/last_section.svg" alt="" />
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-11">
+        <div class="footer-column">
+          <p class="font-medium text-white">Product</p>
+          <p>Employee database</p>
+          <p>Payroll</p>
+          <p>Absences</p>
+          <p>Time tracking</p>
+          <p>Shift planner</p>
+          <p>Recruiting</p>
+        </div>
+        <div class="footer-column">
+          <p class="font-medium text-white">Information</p>
+          <p>FAQ</p>
+          <p>Blog</p>
+          <p>Support</p>
+        </div>
+        <div class="footer-column">
+          <p class="font-medium text-white">Company</p>
+          <p>About us</p>
+          <p>Careers</p>
+          <p>Contact us</p>
+          <p>Lift Media</p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
