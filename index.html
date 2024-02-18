@@ -25,44 +25,59 @@
   </head>
   <body class="w-full h-full">
     <!-- Navbar -->
-    <div id="navbar">
-      <nav class="flex w-full justify-between xl:justify-around align-middle">
-        <img style="width: 15%" src="./images/logo.svg" alt="" />
-        <div class="nav-items hidden xl:flex">
-          <a class="nav-item hover:cursor-pointer"
-            ><span>Company</span>
-            <ion-icon name="chevron-down-outline"></ion-icon
-          ></a>
-          <a class="nav-item hover:cursor-pointer"
-            ><span>Learn</span> <ion-icon name="chevron-down-outline"></ion-icon
-          ></a>
-          <a class="nav-item hover:cursor-pointer"><span>Pricing</span></a>
-          <a class="nav-item hover:cursor-pointer"><span>Login</span> </a>
-          <button class="py-2 px-3 rounded-lg">Get Started</button>
-        </div>
-        <div class="flex xl:hidden">
-          <ion-icon name="menu-outline" class="size-9 mt-3"></ion-icon>
-        </div>
-      </nav>
-    </div>
-
-    <!-- -------------Hero Section----------------->
-    <section
-      id="hero-section"
-      class="grid grid-cols-1 gap-3 xl:grid-cols-2 w-100"
-    >
-      <div class="hero-section-text text-left">
-        <p class="yoo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, assumenda!</p>
-        <button class="py-2 px-2 rounded-lg">Get Started</button>
+    <section id="first-page">
+      <div id="navbar">
+        <nav
+          class="flex justify-between cursor-pointer xl:justify-between align-left"
+        >
+          <img src="./images/logo.svg" alt="" />
+          <div class="nav-items desktop-menu">
+            <a class="nav-item hover:cursor-pointer"
+              ><span
+                >Company
+                <ion-icon class="text-lg" name="chevron-down-outline"></ion-icon
+              ></span>
+            </a>
+            <a class="nav-item hover:cursor-pointer"
+              ><span
+                >Learn
+                <ion-icon
+                  class="text-lg"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </span>
+            </a>
+            <a class="nav-item hover:cursor-pointer"><span>Pricing</span></a>
+            <a class="nav-item hover:cursor-pointer"><span>Login</span> </a>
+            <button class="py-2 px-4 rounded-lg">Get Started</button>
+          </div>
+          <div class="mobile-menu">
+            <ion-icon name="menu-outline" class="size-9 mt-3"></ion-icon>
+          </div>
+        </nav>
       </div>
-      <div class="hero-section-img text-center">
-        <img src="./images/hero-section-image.svg" alt="" />
+
+      <!-- -------------Hero Section----------------->
+      <div
+        id="hero-section"
+        class="md:grid gap-3 grid-cols-1 text-center md:grid-cols-2"
+      >
+        <div class="hero-section-text text-left">
+          <h1>Utilize our solution to expand your business.</h1>
+          <p>
+            "Unlock Growth Potential: Harness NexAI to Propel Your Business
+            Beyond Limits"
+          </p>
+          <button class="py-2 px-4 xl:py-3 xl:px-6 rounded-lg">
+            Get Started
+          </button>
+        </div>
+        <div class="flex hero-section-img">
+          <img src="./images/hero-section-image.svg" alt="" />
+        </div>
       </div>
     </section>
-
-    <div
-      class="projects-completion-div w-100 grid grid-cols-1 md:grid-cols-3 gap-14"
-    >
+    <div class="projects-completion-div grid grid-cols-1 lg:grid-cols-3">
       <div class="text-center">
         <h1>250+</h1>
         <p>Trusted Partners</p>
@@ -85,10 +100,10 @@
         <p>Follow these 3 easy steps</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-14 text-left">
         <div class="steps-card">
           <div class="steps-card-part-1">
-            <div class="steps-card-img-container">
+            <div class="steps-card-img-container container-1">
               <img src="./images/register-card.svg" alt="" />
             </div>
             <h2>1</h2>
@@ -98,25 +113,27 @@
             <p>
               Sign up and Connect your Data Sources with one-click integrations.
             </p>
+            <div class="steps-card-bottom-border bottom-container-1"></div>
           </div>
         </div>
 
         <div class="steps-card">
           <div class="steps-card-part-1">
-            <div class="steps-card-img-container">
+            <div class="steps-card-img-container container-2">
               <img src="./images/enquire-card.svg" alt="" />
             </div>
             <h2>2</h2>
           </div>
           <div class="steps-card-part-2">
-            <h2>Enquire</h2>
+            <h2 class="font-extrabold">Enquire</h2>
             <p>Prompt NexAI with Business Queries</p>
+            <div class="steps-card-bottom-border bottom-container-2"></div>
           </div>
         </div>
 
         <div class="steps-card">
           <div class="steps-card-part-1">
-            <div class="steps-card-img-container">
+            <div class="steps-card-img-container container-3">
               <img src="./images/explore.svg" alt="" />
             </div>
             <h2>3</h2>
@@ -124,6 +141,7 @@
           <div class="steps-card-part-2">
             <h2>Explore</h2>
             <p>Start Analyzing your Data.</p>
+            <div class="steps-card-bottom-border bottom-container-3"></div>
           </div>
         </div>
       </div>
@@ -135,19 +153,22 @@
       <div class="text-center">
         <h1>Why NexAI is Essential for Web Stores</h1>
         <p>
-          NexAI employs advanced AI for personalized product suggestions,
-          ensuring a unique and engaging shopping experience that aligns with
-          individual preferences.
+          NexAI is essential for web stores, leveraging advanced AI for
+          personalized recommendations, inventory optimization, and improved
+          customer support. It drives sales, enhances efficiency, and fosters
+          customer loyalty, making it a must-have for e-commerce success.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 text-center gap-3">
+      <div
+        class="grid cards-nexai grid-cols-1 md:grid-cols-2 text-center gap-16 lg:gap-28"
+      >
         <div class="about-nexai-card">
           <div class="card-icon">
             <img src="./images/image_search.svg" alt="" />
           </div>
-          <h1>Tailored Recommendations</h1>
-          <p>
+          <h2>Tailored Recommendations</h2>
+          <p class="about-nexai-card-caption">
             NexAI predicts demand patterns, preventing overstock and
             out-of-stock scenarios, optimizing inventory management for improved
             operational efficiency.
@@ -157,8 +178,8 @@
           <div class="card-icon">
             <img src="./images/image_search.svg" alt="" />
           </div>
-          <h1>Smart Sales Insights</h1>
-          <p>
+          <h2>Smart Sales Insights</h2>
+          <p class="about-nexai-card-caption">
             Utilize NexAI for intelligent customer trend analysis, enabling
             strategic product placement and targeted marketing efforts to drive
             sales.
@@ -168,8 +189,8 @@
           <div class="card-icon">
             <img src="./images/image_search.svg" alt="" />
           </div>
-          <h1>Instant Customer Support</h1>
-          <p>
+          <h2>Instant Customer Support</h2>
+          <p class="about-nexai-card-caption">
             With NexAI's integrated chatbot, provide 24/7 responsive assistance,
             guiding users and answering queries for enhanced customer
             satisfaction and loyalty.
@@ -179,8 +200,8 @@
           <div class="card-icon">
             <img src="./images/image_search.svg" alt="" />
           </div>
-          <h1>Efficient Inventory Control</h1>
-          <p>
+          <h2>Efficient Inventory Control</h2>
+          <p class="about-nexai-card-caption">
             NexAI employs advanced AI for personalized product suggestions,
             ensuring a unique and engaging shopping experience that aligns with
             individual preferences.
@@ -193,21 +214,34 @@
     <!---------------Billing Section----------------->
     <section id="billing-section">
       <div class="first-part text-center">
-        <h1 class="font-semibold text-3xl mb-5">Get Started Now</h1>
+        <h1 class="text-3xl mb-5">Get Started Now</h1>
         <p class="text-slate-900 mb-8">
           Lörem ipsum tygydevis kvaside har cringe och änälogi i mjuta multina
           såväl som sokrojugen yv eftersom bepos ber de libel. Bängen änack i
           nyhöpäsa konsiv att aktig fast ov.
         </p>
-        <div>
+        <div class="billing-section-button">
           <button
-            class="m-0 py-2 px-4 border-2 border-slate-600 rounded-lg hover:bg-slate-200 transition"
+            style="position: relative"
+            class="border-2 border-slate-600 rounded-lg hover:bg-slate-200 transition"
           >
+            <div style="position: absolute; top: -23px; left: -18px">
+              <img
+                style="position: relative"
+                src="./images/20_percent_off_bg.svg"
+                alt=""
+              />
+              <img
+                style="position: absolute; top: 14px; left: 12px"
+                src="./images/20_percent_off.svg"
+                alt=""
+              />
+            </div>
             Annual Billing
           </button>
           <button
             style="background-color: #1f3e50"
-            class="m-0 py-2 px-4 border-2 text-white rounded-lg hover:bg-slate-300 transition"
+            class="border-2 text-white rounded-lg hover:bg-slate-300 transition"
           >
             Monthly Billing
           </button>
@@ -219,18 +253,18 @@
       <div class="pricing-cards mt-20 grid gap-10 grid-cols-1 lg:grid-cols-3">
         <!-- Card-1 -->
         <div
-          class="pricing-card flex flex-col px-9 py-7 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
+          class="pricing-card flex flex-col px-9 py-7 mx-auto max-w-lg text-center text-gray-900 bg-white border border-gray-100 shadow"
         >
           <img class="size-4 mb-2" src="./images/circle.png" alt="" />
-          <h3 class="mb-4 text-2xl text-left font-semibold">Starter</h3>
+          <h3 class="mb-5 mt-3 text-left font-semibold">Lite</h3>
           <hr />
           <br />
           <div class="flex justify-center items-baseline my-4">
-            <span class="mr-2 text-4xl font-extrabold">$29</span>
+            <span class="mr-2 text-4xl font-bold">$29</span>
             <span class="text-gray-500">/mo.</span>
           </div>
           <p class="text-center text-gray-500">(billed monthly)</p>
-          <p class="font-light text-gray-500 text-left text-sm px-4 my-4">
+          <p class="font-light text-gray-500 text-left text-lg px-3 lg:px-14 my-4">
             <b class="font-bold">Lörem ipsum </b> tygydevis kvaside har cringe
             och änälogi
           </p>
@@ -272,28 +306,48 @@
           <a
             href="#"
             style="background-color: #1f3e50"
-            class="text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            class="text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 rounded-lg text-center"
             >Start free trial</a
           >
         </div>
 
         <!-- card - 2 -->
         <div
-          class="pricing-card pricing-card-2 flex flex-col px-9 py-7 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border border-gray-600 text-white shadow"
+          class="pricing-card pricing-card-2 flex flex-col px-9 py-7 mx-auto max-w-lg text-center bg-gray-900 border border-gray-600 text-white shadow"
         >
           <div class="flex">
-            <img class="size-4 mb-2 mr-2" src="./images/ellipse.png" alt="" />
-            <img class="size-4 mb-2" src="./images/ellipse.png" alt="" />
+            <svg
+              width="22"
+              height="26"
+              viewBox="0 0 22 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="6.5"
+                cy="19.5"
+                r="5.5"
+                stroke="white"
+                stroke-width="2"
+              />
+              <circle
+                cx="15.5"
+                cy="6.5"
+                r="5.5"
+                stroke="white"
+                stroke-width="2"
+              />
+            </svg>
           </div>
-          <h3 class="mb-4 text-2xl text-left font-semibold">Basic</h3>
+          <h3 class="mb-5 mt-3 text-4xl text-left font-semibold">Basic</h3>
           <hr />
           <br />
           <div class="flex justify-center items-baseline my-4">
-            <span class="mr-2 text-4xl font-extrabold">$49</span>
+            <span class="mr-2 text-4xl font-bold">$49</span>
             <span class="text-gray-500">/mo.</span>
           </div>
           <p class="text-center text-gray-500">(billed monthly)</p>
-          <p class="font-light text-gray-300 text-left text-sm px-4 my-4">
+          <p class="font-light text-gray-300 text-left text-lg px-3 lg:px-14 my-4">
             <b class="font-bold">Lörem ipsum </b> tygydevis kvaside har cringe
             och änälogi
           </p>
@@ -357,29 +411,79 @@
           <a
             href="#"
             style="background-color: #fff"
-            class="text-gray-800 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-bold rounded-lg text-sm px-5 py-2.5 text-center"
+            class="text-gray-800 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-bold rounded-lg text-center"
             >Start free trial</a
           >
         </div>
 
         <!-- Card - 3 -->
         <div
-          class="pricing-card flex flex-col px-9 py-7 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
+          class="pricing-card relative flex flex-col px-9 py-7 mx-auto max-w-lg text-center text-gray-900 bg-white border border-gray-100 shadow"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="177"
+            height="34"
+            viewBox="0 0 177 34"
+            fill="none"
+            style="position: absolute; right: -1px; top: 0"
+          >
+            <path
+              d="M0 0H155.155L158.739 0.0888764C168.216 0.323861 176.04 7.56916 177 17V34H0L9.52215 17.5L0 0Z"
+              fill="#189903"
+            />
+          </svg>
+          <p
+            style="
+              position: absolute;
+              right: 40px;
+              top: 5px;
+              font-weight: 500;
+              color: white;
+            "
+          >
+            Most Popular
+          </p>
           <div class="flex">
-            <img class="size-4 mb-2 mr-2" src="./images/circle.png" alt="" />
-            <img class="size-4 mb-2 mr-2" src="./images/circle.png" alt="" />
-            <img class="size-4 mb-2" src="./images/circle.png" alt="" />
+            <svg
+              width="29"
+              height="27"
+              viewBox="0 0 29 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="6.5"
+                cy="6.5"
+                r="5.5"
+                stroke="#162334"
+                stroke-width="2"
+              />
+              <circle
+                cx="13.5"
+                cy="20.5"
+                r="5.5"
+                stroke="#162334"
+                stroke-width="2"
+              />
+              <circle
+                cx="22.5"
+                cy="7.5"
+                r="5.5"
+                stroke="#162334"
+                stroke-width="2"
+              />
+            </svg>
           </div>
-          <h3 class="mb-4 text-2xl text-left font-semibold">Pro</h3>
+          <h3 class="mb-4 mt-6 text-2xl text-left font-semibold">Pro</h3>
           <hr />
           <br />
           <div class="flex justify-center items-baseline my-4">
-            <span class="mr-2 text-4xl font-extrabold">$59</span>
+            <span class="mr-2 text-4xl font-bold">$59</span>
             <span class="text-gray-500">/mo.</span>
           </div>
           <p class="text-center text-gray-500">(billed monthly)</p>
-          <p class="font-light text-gray-500 text-left text-sm px-4 my-4">
+          <p class="font-light text-gray-500 text-left text-lg px-3 lg:px-14 my-4">
             <b class="font-bold">Lörem ipsum </b> tygydevis kvaside har cringe
             och änälogi
           </p>
@@ -465,7 +569,7 @@
           <a
             href="#"
             style="background-color: #1f3e50"
-            class="text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            class="text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-center"
             >Start free trial</a
           >
         </div>
@@ -475,22 +579,22 @@
     <!-- Used the already-created cards from about-nexai section -->
     <section id="about">
       <div class="grid grid-cols-1 md:grid-cols-2 text-center gap-3">
-        <div class="about-card">
+        <div class="about-card m-8 lg:m-0">
           <div class="card-icon">
             <img src="./images/image_search.svg" alt="" />
           </div>
-          <h1>Tailored Recommendations</h1>
+          <h1>Lorem, ipsum.</h1>
           <p>
             NexAI predicts demand patterns, preventing overstock and
             out-of-stock scenarios, optimizing inventory management for improved
             operational efficiency.
           </p>
         </div>
-        <div class="about-card">
+        <div class="about-card m-8 lg:m-0">
           <div class="card-icon">
             <img src="./images/image_search.svg" alt="" />
           </div>
-          <h1>Smart Sales Insights</h1>
+          <h1>Lorem, ipsum.</h1>
           <p>
             Utilize NexAI for intelligent customer trend analysis, enabling
             strategic product placement and targeted marketing efforts to drive
@@ -502,7 +606,7 @@
 
     <!-- Feedback Section  -->
     <section id="feedback">
-      <h1 class="text-3xl text-center mb-24">What our customers say ?</h1>
+      <h1 class="text-center mb-24">What our customers say ?</h1>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-20">
         <div
           class="feedback-card flex flex-col text-center justify-center align-middle px-5 shadow-xl rounded-lg"
@@ -512,7 +616,7 @@
             src="./images/client.png"
             alt=""
           />
-          <h1 class="text-lg font-semibold mb-2">Olivia</h1>
+          <h2 class="text-lg font-semibold mb-2">Olivia</h2>
           <div class="flex">
             <img class="size-7" src="./images/star.png" alt="" />
             <img class="size-7" src="./images/star.png" alt="" />
@@ -534,7 +638,7 @@
             src="./images/client.png"
             alt=""
           />
-          <h1 class="text-lg font-semibold mb-2">Olivia</h1>
+          <h2 class="text-lg font-semibold mb-2">Olivia</h2>
           <div class="flex">
             <img class="size-7" src="./images/star.png" alt="" />
             <img class="size-7" src="./images/star.png" alt="" />
@@ -556,7 +660,7 @@
             src="./images/client.png"
             alt=""
           />
-          <h1 class="text-lg font-semibold mb-2">Olivia</h1>
+          <h2 class="text-lg font-semibold mb-2">Olivia</h2>
           <div class="flex">
             <img class="size-7" src="./images/star.png" alt="" />
             <img class="size-7" src="./images/star.png" alt="" />
@@ -593,9 +697,9 @@
     </section>
 
     <section id="footer">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-11">
+      <div class="grid mb-24 grid-cols-1 footer-part-1 gap-16 lg:grid-cols-4">
         <div class="footer-column">
-          <p class="font-medium text-white">Product</p>
+          <h2 class="text-white">Product</h2>
           <p>Employee database</p>
           <p>Payroll</p>
           <p>Absences</p>
@@ -604,18 +708,99 @@
           <p>Recruiting</p>
         </div>
         <div class="footer-column">
-          <p class="font-medium text-white">Information</p>
+          <h2 class="text-white">Information</h2>
           <p>FAQ</p>
           <p>Blog</p>
           <p>Support</p>
         </div>
         <div class="footer-column">
-          <p class="font-medium text-white">Company</p>
+          <h2 class="text-white">Company</h2>
           <p>About us</p>
           <p>Careers</p>
           <p>Contact us</p>
           <p>Lift Media</p>
         </div>
+        <div class="footer-column">
+          <div class="white-box">
+            <h2>Subscribe</h2>
+            <div class="flex">
+              <input
+                type="text"
+                class="rounded-lg bg-white px-7 py-2"
+                placeholder="Email address"
+              />
+              <button class="px-3 rounded-lg py-3 bg-slate-800">
+                <img src="./images/right_arrow.png" alt="" />
+              </button>
+            </div>
+            <p>
+              Hello, we are Lift Media. Our goal is to translate the positive
+              effects from revolutionizing how companies engage with their
+              clients & their team.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="social-media-links">
+        <div class="yo">.</div>
+        <div class="social-media-links-1">
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Cookies</p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="183"
+          height="49"
+          viewBox="0 0 183 49"
+          fill="none"
+        >
+          <path
+            opacity="0.25"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M158.363 47.9393C171.255 47.9393 181.706 37.4882 181.706 24.5961C181.706 11.704 171.255 1.25293 158.363 1.25293C145.471 1.25293 135.02 11.704 135.02 24.5961C135.02 37.4882 145.471 47.9393 158.363 47.9393Z"
+            stroke="white"
+            stroke-width="2.00084"
+          />
+          <path
+            d="M165.992 20.2807C165.884 20.1583 165.709 20.1275 165.566 20.203C165.477 20.2499 165.309 20.3115 165.11 20.3723C165.361 20.0292 165.563 19.6451 165.652 19.2998C165.69 19.151 165.634 18.9941 165.511 18.9054C165.389 18.8174 165.226 18.8174 165.103 18.9054C164.91 19.0439 163.978 19.4603 163.388 19.5952C162.056 18.3951 160.506 18.2705 158.894 19.2382C157.584 20.0248 157.299 21.6245 157.355 22.5996C154.356 22.3026 152.492 20.6737 151.443 19.3254C151.37 19.2309 151.251 19.181 151.14 19.1884C151.023 19.1971 150.918 19.2639 150.858 19.3672C150.362 20.2286 150.224 21.181 150.462 22.1216C150.591 22.6347 150.818 23.0871 151.081 23.4536C150.955 23.3899 150.833 23.3099 150.718 23.2146C150.613 23.1252 150.465 23.1083 150.34 23.1677C150.216 23.2286 150.137 23.3576 150.137 23.4991C150.137 25.1142 151.12 26.1918 152.037 26.7549C151.889 26.7366 151.734 26.7028 151.578 26.6537C151.444 26.6119 151.298 26.6537 151.206 26.7622C151.113 26.87 151.091 27.0239 151.149 27.1552C151.664 28.3274 152.641 29.1339 153.849 29.4264C152.794 30.0634 151.382 30.3758 150.089 30.2225C149.921 30.1983 149.762 30.3076 149.709 30.4733C149.656 30.6389 149.725 30.8208 149.873 30.9058C151.834 32.0385 153.608 32.4432 155.14 32.4432C157.37 32.4432 159.092 31.5869 160.139 30.8706C162.964 28.9425 164.725 25.4807 164.479 22.3833C164.932 22.0395 165.609 21.4046 166.029 20.722C166.116 20.5842 166.1 20.4024 165.992 20.2807Z"
+            fill="white"
+          />
+          <path
+            opacity="0.25"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M91.6693 47.9393C104.561 47.9393 115.013 37.4882 115.013 24.5961C115.013 11.704 104.561 1.25293 91.6693 1.25293C78.7773 1.25293 68.3262 11.704 68.3262 24.5961C68.3262 37.4882 78.7773 47.9393 91.6693 47.9393Z"
+            stroke="white"
+            stroke-width="2.00084"
+          />
+          <path
+            d="M93.7938 18.6213H95.9392C96.1366 18.6213 96.2968 18.4703 96.2968 18.2844V16.2627C96.2968 16.0767 96.1366 15.9258 95.9392 15.9258H93.7938C91.6255 15.9258 89.8605 17.5882 89.8605 19.6321V21.9907H87.3576C87.1602 21.9907 87 22.1416 87 22.3276V24.3493C87 24.5353 87.1602 24.6862 87.3576 24.6862H89.8605V31.7619C89.8605 31.9479 90.0207 32.0989 90.2181 32.0989H92.3635C92.5609 32.0989 92.7211 31.9479 92.7211 31.7619V24.6862H95.2241C95.3778 24.6862 95.5144 24.5932 95.5638 24.4557L96.2789 22.4341C96.3154 22.3317 96.2968 22.2185 96.2295 22.1302C96.1616 22.0426 96.0543 21.9907 95.9392 21.9907H92.7211V19.6321C92.7211 19.0748 93.2024 18.6213 93.7938 18.6213Z"
+            fill="white"
+          />
+          <path
+            opacity="0.25"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24.974 47.9393C37.8661 47.9393 48.3172 37.4882 48.3172 24.5961C48.3172 11.704 37.8661 1.25293 24.974 1.25293C12.082 1.25293 1.63086 11.704 1.63086 24.5961C1.63086 37.4882 12.082 47.9393 24.974 47.9393Z"
+            stroke="white"
+            stroke-width="2.00084"
+          />
+          <path
+            d="M19.6156 19.8836C20.7085 19.8836 21.5945 18.9976 21.5945 17.9047C21.5945 16.8118 20.7085 15.9258 19.6156 15.9258C18.5227 15.9258 17.6367 16.8118 17.6367 17.9047C17.6367 18.9976 18.5227 19.8836 19.6156 19.8836Z"
+            fill="white"
+          />
+          <path
+            d="M21.2647 21.2051H17.9665C17.7845 21.2051 17.6367 21.3528 17.6367 21.5349V31.4294C17.6367 31.6115 17.7845 31.7592 17.9665 31.7592H21.2647C21.4468 31.7592 21.5945 31.6115 21.5945 31.4294V21.5349C21.5945 21.3528 21.4468 21.2051 21.2647 21.2051Z"
+            fill="white"
+          />
+          <path
+            d="M31.0935 20.6564C29.6839 20.1735 27.9207 20.5976 26.8633 21.3582C26.827 21.2164 26.6977 21.1108 26.544 21.1108H23.2458C23.0638 21.1108 22.916 21.2586 22.916 21.4407V31.3352C22.916 31.5172 23.0638 31.665 23.2458 31.665H26.544C26.7261 31.665 26.8738 31.5172 26.8738 31.3352V24.2243C27.4068 23.7652 28.0935 23.6188 28.6555 23.8576C29.2003 24.0878 29.5124 24.6498 29.5124 25.3985V31.3352C29.5124 31.5172 29.6601 31.665 29.8422 31.665H33.1403C33.3224 31.665 33.4702 31.5172 33.4702 31.3352V24.7342C33.4326 22.0238 32.1575 21.0205 31.0935 20.6564Z"
+            fill="white"
+          />
+        </svg>
       </div>
     </section>
 
